@@ -4,20 +4,43 @@
             xmlns:baci="urn:schemas-cosylab-com:BACI:1.0"
             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
+<!-- pyDatabase -->
+     <e Name="ACS_astroDatabase"
+         Code="AstroDatabase.ProposalHandler"
+              Type="IDL:acsws/DATABASE_MODULE/DataBase:1.0"
+         Container="databaseContainer"
+         ImplLang="py" />
+     
+<!-- pyConsole -->
+    <e Name="CONSOLE"
+       Code="pyConsoleImpl.pyConsoleImpl"
+       Type="IDL:acsws/CONSOLE_MODULE/Console:1.0"
+       Container="pyContainer" ImplLang="py" />
+
+<!-- pyScheduler -->
+    <e Name="SCHEDULER_PY"
+       Code="pyscheduler.Scheduler"
+       Type="IDL:acsws/SCHEDULER_MODULE/Scheduler:1.0"
+       Container="pyContainer" ImplLang="py" />
+
+<!-- jScheduler -->
+    <e Name="SCHEDULER_COMP"
+        Code="acsws.SCHEDULER_MODULE.SchedulerImpl.SchedulerComponentHelper"
+        Type="IDL:acsws/SCHEDULER_MODULE/Scheduler:1.0"
+        Container="frodoContainer"
+        ImplLang="java"/>
+
+<!-- cppTelescope -->
    <e Name="TELESCOPE"
        Code="TelescopeImpl"
        Type="IDL:acsws/TELESCOPE_MODULE/Telescope:1.0"
        Container="bilboContainer" ImplLang="cpp" />
 
+<!-- cppInstrument -->
    <e Name="INSTRUMENTS" Code="InstrumentsImpl"
       Type="IDL:acsws/INSTRUMENT_MODULE/Instrument:1.0"
       Container="cppContainer"
       ImplLang="cpp"/>
-
-    <e Name="CONSOLE"
-       Code="pyConsoleImpl.pyConsoleImpl"
-       Type="IDL:acsws/CONSOLE_MODULE/Console:1.0"
-       Container="pyContainer" ImplLang="py" />
 
 <!-- Additional component configurations: -->
 <!-- END Additional component configurations. -->

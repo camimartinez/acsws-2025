@@ -42,11 +42,28 @@
       Container="cppContainer"
       ImplLang="cpp"/>
 
-<!-- Additional component configurations: -->
-<!-- END Additional component configurations. -->
+<!-- Hardware device components: -->
+    <e Name="TELESCOPE_CONTROL"
+       Code="stellarium.StellariumComponent"
+       Type="IDL:acsws/TELESCOPE_MODULE/TelescopeControl:1.0"
+       Container="pyControlContainer" ImplLang="py" />
+    <e Name="CAMERA"
+       Code="astrocam.AstrocamComponent"
+       Type="IDL:acsws/CAMERA_MODULE/Camera:1.0"
+       Container="pyControlContainer" ImplLang="py" />
+<!-- END Hardware device components. -->
 
-<!-- Simulated high level components: -->
-<!-- END Simulated high level components. -->
+<!-- Simulated device components: -->
+    <e Name="TELESCOPE_CONTROL_S"
+       Code="Acssim.Servants.Simulator"
+       Type="IDL:acsws/TELESCOPE_MODULE/TelescopeControl:1.0"
+       Container="pySimContainer" ImplLang="py" />
+
+    <e Name="CAMERA_S"
+       Code="Acssim.Servants.Simulator"
+       Type="IDL:acsws/CAMERA_MODULE/Camera:1.0"
+       Container="pySimContainer" ImplLang="py" />
+<!-- END Simulated device components. -->
 
 </Components>
 

@@ -8,7 +8,7 @@
      <e Name="ACS_astroDatabase"
          Code="AstroDatabase.ProposalHandler"
               Type="IDL:acsws/DATABASE_MODULE/DataBase:1.0"
-         Container="databaseContainer"
+         Container="pyContainer"
          ImplLang="py" />
      
 <!-- pyConsole -->
@@ -34,7 +34,7 @@
    <e Name="TELESCOPE"
        Code="TelescopeImpl"
        Type="IDL:acsws/TELESCOPE_MODULE/Telescope:1.0"
-       Container="bilboContainer" ImplLang="cpp" />
+       Container="cppContainer" ImplLang="cpp" />
 
 <!-- cppInstrument -->
    <e Name="INSTRUMENTS" Code="InstrumentsImpl"

@@ -5,7 +5,7 @@
             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
 <!-- pyDatabase -->
-     <e Name="ACS_astroDatabase"
+     <e Name="DATABASE"
          Code="AstroDatabase.ProposalHandler"
               Type="IDL:acsws/DATABASE_MODULE/DataBase:1.0"
          Container="pyContainer"
@@ -24,7 +24,7 @@
        Container="pyContainer" ImplLang="py" />
 
 <!-- jScheduler -->
-    <e Name="SCHEDULER_COMP"
+    <e Name="SCHEDULER_JAVA"
         Code="acsws.SCHEDULER_MODULE.SchedulerImpl.SchedulerComponentHelper"
         Type="IDL:acsws/SCHEDULER_MODULE/Scheduler:1.0"
         Container="javaContainer"
@@ -37,7 +37,7 @@
        Container="cppContainer" ImplLang="cpp" />
 
 <!-- cppInstrument -->
-   <e Name="INSTRUMENTS" Code="InstrumentsImpl"
+   <e Name="INSTRUMENT" Code="InstrumentsImpl"
       Type="IDL:acsws/INSTRUMENT_MODULE/Instrument:1.0"
       Container="cppContainer"
       ImplLang="cpp"/>

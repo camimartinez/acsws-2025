@@ -27,7 +27,7 @@
     <e Name="SCHEDULER_COMP"
         Code="acsws.SCHEDULER_MODULE.SchedulerImpl.SchedulerComponentHelper"
         Type="IDL:acsws/SCHEDULER_MODULE/Scheduler:1.0"
-        Container="frodoContainer"
+        Container="javaContainer"
         ImplLang="java"/>
 
 <!-- cppTelescope -->
